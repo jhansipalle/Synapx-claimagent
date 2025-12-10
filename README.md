@@ -6,7 +6,7 @@ OUTPUT TO CHECK  the processed FNOL: curl -X POST "https://synapx-claimagent.onr
 
 Hey !This is a lightweight insurance claims processing agent that can read FNOL (First Notice of Loss) documents, extract important fields, check for missing information, classify the claim, and decide the correct workflow route.
 It supports both:JSON input and PDF upload + auto extraction. 
-I have developed using plain javascript and basic express and Regex (for pdf processor took help of ai tool).
+I have developed using plain javascript and basic express and Regex (for pdf processor using ai tool).
 
 Logic for this: I built my system by breaking everything into small, easy steps:
 
@@ -28,3 +28,4 @@ If estimated damage < 25,000 → Fast-track
 If any required field is missing → Manual Review
 If description has fraud words (“staged”, “inconsistent”) → Investigation
 If claim type = injury → Specialist Queue
+
